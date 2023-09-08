@@ -89,7 +89,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'  # Requries email to register for the s
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True  # Requries email to register for the site. Mandatory to ensure users use real email.
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/success'
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'jack_fairfield.wsgi.application'
 
