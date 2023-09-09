@@ -9,3 +9,25 @@ body {
     font-family: 'Special Elite', cursive;
     height: calc(100vh - 4.625rem);
 }
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+/*---Media Queries---*/
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
