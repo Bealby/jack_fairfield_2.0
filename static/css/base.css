@@ -10,17 +10,34 @@ body {
     height: calc(100vh - 4.625rem);
 }
 
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+
+
+/*---Navbar---*/
+
+.navbar-toggler {
+    margin-left: 10px !important;
 }
+
+/*---Logo---*/
 
 .main-logo-link {
     width: fit-content;
+}
+
+/*---Buttons---*/
+
+.btn:focus, .form-control:focus {
+    box-shadow: none !important;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border-color: transparent !important;
+}
+
+/*---Headers---*/
+
+.header_icons_right {
+    text-align: right !important;
 }
 
 /*---Media Queries---*/
@@ -29,5 +46,12 @@ body {
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+}
+
+/* Font awesome icons smaller for 991px screens for better viewing */
+@media (max-width: 991px) {
+    .fa-lg {
+        font-size: 1em;
     }
 }
