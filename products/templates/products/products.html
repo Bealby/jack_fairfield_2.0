@@ -14,20 +14,26 @@
 <div class="container-fluid">
     <div class="row mt-5">
         {% for product in products %}
-        <div class="col-12">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="{{ product.image.url }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">{{ product.description }}</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">{{ product.price }}</li>
-                </ul>
-                <div class="card-body">
-                    <a href="" class="card-link">Card link</a>
-                </div>
-            </div>
+        <div class="col-12 col-md-6 text-center">
+            <img src="{{ product.image.url }}" alt="Jack Fairfield - Book Front Cover">
+        </div>
+        <div class="col-12 col-md-6 max-auto">
+            <p><strong>Jack Fairfield</strong> was born on the 27th July 1915, in Windygates, Fife, Scotland. The oldest
+                of four
+                brothers, he enrolled
+                in the Royal Army Ordinance Corps on the 16th March 1940.</p>
+            <p>During his time in the forces he wrote a journal that provides an extraordinary insight into an everyday
+                individual who
+                volunteered for service in WW2. His beginnings, the places he visited, the people he saw, the events he
+                witnessed; along
+                with his private thoughts of anguish, injustice, and happiness he experienced, are all covered
+                throughout his journey.
+            </p>
+            </p>
+            Included also in this book is a culmination of extensive research, which aids to add some context and
+            explore in more
+            depth some of the more interesting aspects and locations Jack writes about.
+            </p>
         </div>
         {% endfor %}
     </div>
