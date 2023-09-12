@@ -7,10 +7,7 @@ html {
 body {
     background: rgb(209, 200, 171, 1);
     font-family: 'Special Elite', cursive;
-    height: calc(100vh - 126px);
 }
-
-
 
 /*---Navbar---*/
 
@@ -40,6 +37,10 @@ body {
     text-align: right !important;
 }
 
+.header-container {
+    padding-top: 126px;
+}
+
 /*---Media Queries---*/
 
 /* Slightly larger container on xl screens */
@@ -53,20 +54,5 @@ body {
 @media (max-width: 991px) {
     .fa-lg {
         font-size: 1em;
-    }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 126px;
     }
 }
